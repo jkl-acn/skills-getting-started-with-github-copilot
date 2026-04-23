@@ -16,6 +16,20 @@
         "src/static/*"
       ],
       "jinja": true
+    },
+    {
+      "name": "Run All Tests (pytest)",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "pytest",
+      "args": [
+        "-q",
+        "tests"
+      ],
+      "cwd": "${workspaceFolder}",
+      "python": "${workspaceFolder}/.venv/bin/python",
+      "console": "integratedTerminal",
+      "justMyCode": false
     }
   ]
 }
